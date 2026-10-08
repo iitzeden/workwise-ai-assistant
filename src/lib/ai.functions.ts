@@ -18,7 +18,7 @@ const SYSTEM: Record<string, string> = {
 export const generateAI = createServerFn({ method: "POST" })
   .inputValidator((d: unknown) => Input.parse(d))
   .handler(async ({ data }) => {
-    const key = process.env.LOVABLE_API_KEY;
+    const key = process.env["LOVABLE_API_KEY"];
     if (!key) return { ok: false as const, error: "AI service is not configured." };
 
     const res = await fetch("https://ai.gateway.lovable.dev/v1/responses", {
