@@ -54,7 +54,6 @@ The application provides AI-powered tools for generating professional emails, su
 - **Tailwind CSS**: Responsive styling and UI design.
 - **AI API**: Powers AI-generated responses.
 - **Lovable**: Application development and prototyping.
-- **ChatGPT**: Prompt drafting and refinement.
 - **GitHub**: Source code management and version control.
 
 ## Setup Instructions
