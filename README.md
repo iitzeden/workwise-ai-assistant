@@ -1,24 +1,114 @@
-# WorkWise AI Assistant
+# WorkWise: AI Workplace Assistant
 
-Build a modern, responsive web app called "WorkWise" (subtitle: "AI Workplace Assistant"). Features (all in one app): - Email Generator: a text box for the email details, an Audience choice (Client, Manager, Team) and Tone buttons (Formal, Informal, Persuasive). The AI returns a subject line and an email body. - Meeting Notes Summariser: a text box for pasted notes. The AI returns a short summary, key points, decisions, and action items with owner and deadline. Write "Not stated" for anything missing. - Task Planner: a text box for tasks and deadlines, hours available, and a Daily/Weekly choice. The AI returns a prioritised plan with a one-line reason for each task and 2 time-saving tips. Layout: - Desktop: a dark sidebar on the left with the logo and name, the three menu items (active item highlighted), and a small Responsible AI note at the bottom. Each page has a title and subtitle at the top, then two cards side by side: input on the left (Generate button), output on the right with a Copy button and the message "Your AI-generated result will appear here." - Mobile: hide the sidebar behind a menu button that opens a slide-out drawer with a close (X) button. Stack the input and output cards vertically. Style: clean, professional SaaS look using only black, white and light/dark greys. No other colours. Rounded cards, soft shadows, Inter font. Show loading and error states, and make the outputs editable. Requirements: - All responses must be genuinely AI-generated, not hardcoded. - Include a Responsible AI disclaimer: "AI can make mistakes. Review all output before use and do not share sensitive personal or company data." - No backend, database, login or registration. Users open the app directly and give no personal information.
+## Project Overview
 
-This project was built with [Lovable](https://lovable.dev).
+**WorkWise** is a modern web application designed to help professionals and students save time on everyday workplace tasks using AI.
 
-## Build with Lovable
+The application provides AI-powered tools for generating professional emails, summarising meeting notes, and planning daily or weekly schedules. It is designed with a clean SaaS-style interface and can be accessed directly without registration or login.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/2490c355-a150-413a-bd06-cca3372a2c17).
+## Features Implemented
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+### Email Generator
 
-## Development
+- Generates professional workplace emails using AI.
+- Lets the user choose an audience:
+  - Client
+  - Manager
+  - Team
+- Supports multiple writing tones:
+  - Formal
+  - Informal
+  - Persuasive
+- Returns a subject line and a complete email body.
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+### Meeting Notes Summariser
+
+- Converts long or messy meeting notes into a short, clear summary.
+- Extracts key points, decisions, and action items with owners and deadlines.
+- Shows "Not stated" when information is missing, so the AI does not guess.
+
+### Task Planner
+
+- Creates a prioritised daily or weekly plan from a list of tasks and deadlines.
+- Takes the user's available hours into account.
+- Gives a one-line reason for each priority.
+- Provides two time-saving tips.
+
+## User Interface
+
+- Modern SaaS dashboard layout.
+- Sidebar navigation on desktop and a slide-out menu on mobile.
+- Responsive design for desktop and mobile devices.
+- Black, white, and grey professional colour scheme.
+- Clear input and output sections with a Copy button.
+- Editable AI output.
+- Loading and error states.
+- Responsible AI disclaimer.
+- No registration or sign-in required.
+
+## Technologies and Tools Used
+
+- **React**: Frontend application development.
+- **TypeScript**: Type-safe application development.
+- **Vite**: Development server and build tool.
+- **Tailwind CSS**: Responsive styling and UI design.
+- **AI API**: Powers AI-generated responses.
+- **Lovable**: Application development and prototyping.
+- **ChatGPT**: Prompt drafting and refinement.
+- **GitHub**: Source code management and version control.
+
+## Setup Instructions
+
+### 1. Clone the Repository
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+git clone https://github.com/your-username/your-repository-name.git
+```
+
+### 2. Navigate to the Project
+
+```sh
+cd your-repository-name
+```
+
+### 3. Install Dependencies
+
+```sh
+npm install
+```
+
+### 4. Configure AI API
+
+If the project requires an AI API key, create a `.env` file in the project root and add the required API configuration.
+
+### 5. Start the Development Server
+
+```sh
 npm run dev
 ```
+
+Open the local development URL provided by Vite in your browser.
+
+### 6. Build for Production
+
+```sh
+npm run build
+```
+
+The production-ready files will be generated in the project's build directory.
+
+## Prompt Engineering
+
+Each tool uses a structured prompt with a defined role, task, context, output format, and rules. For example, the AI is instructed not to invent facts, names, or dates, and to write "Not stated" when an owner or deadline is missing.
+
+## Project Purpose
+
+This project demonstrates how AI can be integrated into practical workplace productivity tools, helping professionals reduce repetitive tasks and improve communication, meeting follow-up, and planning.
+
+## Responsible AI
+
+The application includes a Responsible AI disclaimer reminding users that AI can make mistakes, and that they should review all output before use and avoid sharing sensitive personal or company data. All outputs are editable, and no personal information is collected or stored.
+
+## Author
+
+Eden du Preez
